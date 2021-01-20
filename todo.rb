@@ -23,7 +23,7 @@ class Todo < ActiveRecord::Base
     puts "\n\n"
 
     puts "Due Today\n"
-    all.where(due_date: Date.today).to_displayable_list
+    puts all.where(due_date: Date.today).to_displayable_list
     puts "\n\n"
 
     puts "Due Later\n"
